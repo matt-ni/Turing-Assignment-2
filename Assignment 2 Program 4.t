@@ -21,12 +21,11 @@ put "Please input invterval at which to count."
 get interval
 clearScreen
 if num1 < num2 then
-    for decreasing i: num2..num1 by interval
+    for i: num1..num2 by interval
 	put i
     end for
 elsif num1 > num2 then
-    loop
-	put "Number one is higher than number 2. Please try again."
-	exit
-    end loop
+    for i: num2..num1 by interval
+	put i
+    end for
 end if
